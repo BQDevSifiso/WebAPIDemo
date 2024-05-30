@@ -1,9 +1,10 @@
-﻿@model Shirt 
+﻿@model Shirt
 
-<h3>Create Shirt</h3>
+<h3>Update Shirt</h3>
 <br />
 
-<form method="post" asp-action="CreateShirt">
+<form method="post" asp-action="UpdateShirt">
+    <input type="hidden" asp-for="ShirtId" />
     <div class="text-danger" asp-validation-summary="All"></div>
 
     <div class="mb-3 row">
@@ -68,10 +69,9 @@
 
     <div class="mb-3 row">
         <div class="col-2">
-            <input type="submit" class="btn btn-primary" value="Submit" />
+            <input type="submit" class="btn btn-primary" value="Save" />
         </div>
         <div class="col-6">
-            
         </div>
     </div>
 </form>
